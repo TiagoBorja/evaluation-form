@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace evaluation_form
 {
-    public partial class Form1 : Form
+    public partial class Perguntas : Form
     {
-        public Form1()
+        public Perguntas()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace evaluation_form
 
         private void btnProsseguir_Click(object sender, EventArgs e)
         {
-            Perguntas f = new Perguntas();
+            Avaliacao f = new Avaliacao();
             f.ShowDialog();
         }
     }

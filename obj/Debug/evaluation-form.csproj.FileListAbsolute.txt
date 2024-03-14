@@ -9,3 +9,5 @@ C:\Users\aluno.AEANTONIOSERGIO.000\Desktop\Tiago 11L\evaluation-form\evaluation-
 C:\Users\aluno.AEANTONIOSERGIO.000\Desktop\Tiago 11L\evaluation-form\evaluation-form\obj\Debug\evaluation-form.csproj.CoreCompileInputs.cache
 C:\Users\aluno.AEANTONIOSERGIO.000\Desktop\Tiago 11L\evaluation-form\evaluation-form\obj\Debug\evaluation-form.exe
 C:\Users\aluno.AEANTONIOSERGIO.000\Desktop\Tiago 11L\evaluation-form\evaluation-form\obj\Debug\evaluation-form.pdb
+C:\Users\aluno.AEANTONIOSERGIO.000\Desktop\Tiago 11L\evaluation-form\evaluation-form\obj\Debug\evaluation_form.Perguntas.resources
+C:\Users\aluno.AEANTONIOSERGIO.000\Desktop\Tiago 11L\evaluation-form\evaluation-form\obj\Debug\evaluation_form.Avaliacao.resources

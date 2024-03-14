@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtEscola = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,29 +39,20 @@
             this.btnSair = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 10F);
-            this.label1.Location = new System.Drawing.Point(179, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Seja bem-vindo!";
-            // 
             // txtNome
             // 
             this.txtNome.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNome.Location = new System.Drawing.Point(151, 125);
+            this.txtNome.Location = new System.Drawing.Point(133, 125);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(172, 21);
+            this.txtNome.Size = new System.Drawing.Size(204, 21);
             this.txtNome.TabIndex = 1;
             // 
             // txtEscola
             // 
-            this.txtEscola.Location = new System.Drawing.Point(151, 195);
+            this.txtEscola.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.txtEscola.Location = new System.Drawing.Point(133, 195);
             this.txtEscola.Name = "txtEscola";
-            this.txtEscola.Size = new System.Drawing.Size(172, 20);
+            this.txtEscola.Size = new System.Drawing.Size(204, 21);
             this.txtEscola.TabIndex = 2;
             // 
             // label2
@@ -99,7 +89,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Verdana", 10F);
-            this.label5.Location = new System.Drawing.Point(20, 36);
+            this.label5.Location = new System.Drawing.Point(20, 20);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(446, 17);
             this.label5.TabIndex = 7;
@@ -107,8 +97,9 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(173, 258);
+            this.comboBox1.Location = new System.Drawing.Point(174, 266);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 8;
@@ -124,6 +115,7 @@
             this.btnProsseguir.TabIndex = 9;
             this.btnProsseguir.Text = "Prosseguir";
             this.btnProsseguir.UseVisualStyleBackColor = false;
+            this.btnProsseguir.Click += new System.EventHandler(this.btnProsseguir_Click);
             // 
             // btnSair
             // 
@@ -136,6 +128,7 @@
             this.btnSair.TabIndex = 10;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = false;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // Form1
             // 
@@ -152,7 +145,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtEscola);
             this.Controls.Add(this.txtNome);
-            this.Controls.Add(this.label1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
@@ -164,8 +156,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.TextBox txtEscola;
         private System.Windows.Forms.Label label2;

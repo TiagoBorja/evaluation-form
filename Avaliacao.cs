@@ -10,22 +10,16 @@ using System.Windows.Forms;
 
 namespace evaluation_form
 {
-    public partial class Form1 : Form
+    public partial class Avaliacao : Form
     {
-        public Form1()
+        public Avaliacao()
         {
             InitializeComponent();
         }
 
-        private void btnSair_Click(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
 
-        private void btnProsseguir_Click(object sender, EventArgs e)
-        {
-            Perguntas f = new Perguntas();
-            f.ShowDialog();
         }
     }
 }
