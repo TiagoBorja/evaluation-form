@@ -14,17 +14,29 @@ namespace evaluation_form
     {
         public Perguntas()
         {
-            InitializeComponent();
+            InitializeComponent();          
         }
 
         private void btnSair_Click(object sender, EventArgs e)
         {
-            this.Close();
+           Application.Exit();
         }
 
         private void btnProsseguir_Click(object sender, EventArgs e)
         {
             Avaliacao f = new Avaliacao();
+            this.Hide();
+            f.ShowDialog();
+        }
+        private void Perguntas_Load(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void pbVoltar_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 f = new Form1();
             f.ShowDialog();
         }
     }

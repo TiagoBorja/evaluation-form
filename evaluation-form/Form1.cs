@@ -19,12 +19,13 @@ namespace evaluation_form
 
         private void btnSair_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void btnProsseguir_Click(object sender, EventArgs e)
         {
             Perguntas f = new Perguntas();
+            this.Hide();
             f.ShowDialog();
         }
     }

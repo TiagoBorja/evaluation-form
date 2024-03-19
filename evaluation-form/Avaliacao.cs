@@ -21,5 +21,12 @@ namespace evaluation_form
         {
 
         }
+
+        private void pbVoltar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Perguntas p = new Perguntas();
+            p.ShowDialog();
+        }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Perguntas));
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -136,13 +137,14 @@
             // 
             // pbVoltar
             // 
-            this.pbVoltar.Image = global::evaluation_form.Properties.Resources.seta_voltar;
+            this.pbVoltar.Image = ((System.Drawing.Image)(resources.GetObject("pbVoltar.Image")));
             this.pbVoltar.Location = new System.Drawing.Point(25, 374);
             this.pbVoltar.Name = "pbVoltar";
             this.pbVoltar.Size = new System.Drawing.Size(25, 25);
             this.pbVoltar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbVoltar.TabIndex = 17;
+            this.pbVoltar.TabIndex = 19;
             this.pbVoltar.TabStop = false;
+            this.pbVoltar.Click += new System.EventHandler(this.pbVoltar_Click_1);
             // 
             // Perguntas
             // 
@@ -165,6 +167,7 @@
             this.Name = "Perguntas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sua Opinião Importa";
+            this.Load += new System.EventHandler(this.Perguntas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbVoltar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

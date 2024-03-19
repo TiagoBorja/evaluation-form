@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Avaliacao));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnEnviar = new System.Windows.Forms.Button();
@@ -130,13 +131,14 @@
             // 
             // pbVoltar
             // 
-            this.pbVoltar.Image = global::evaluation_form.Properties.Resources.seta_voltar;
+            this.pbVoltar.Image = ((System.Drawing.Image)(resources.GetObject("pbVoltar.Image")));
             this.pbVoltar.Location = new System.Drawing.Point(25, 374);
             this.pbVoltar.Name = "pbVoltar";
             this.pbVoltar.Size = new System.Drawing.Size(25, 25);
             this.pbVoltar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbVoltar.TabIndex = 18;
             this.pbVoltar.TabStop = false;
+            this.pbVoltar.Click += new System.EventHandler(this.pbVoltar_Click);
             // 
             // Avaliacao
             // 
