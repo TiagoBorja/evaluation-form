@@ -24,7 +24,9 @@ namespace evaluation_form
 
         private void btnProsseguir_Click(object sender, EventArgs e)
         {
-            Perguntas f = new Perguntas();
+            Perguntas f = Utility.formExists(typeof(Perguntas)) as Perguntas;
+            if (f == null)
+                f = new Perguntas();
             this.Hide();
             f.ShowDialog();
         }

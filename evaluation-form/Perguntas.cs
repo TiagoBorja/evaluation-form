@@ -35,8 +35,10 @@ namespace evaluation_form
 
         private void pbVoltar_Click_1(object sender, EventArgs e)
         {
+            Form1 f = Utility.formExists(typeof(Form1)) as Form1;
+            if (f == null)
+                f = new Form1();
             this.Hide();
-            Form1 f = new Form1();
             f.ShowDialog();
         }
     }
