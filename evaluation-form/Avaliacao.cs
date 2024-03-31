@@ -57,6 +57,9 @@ namespace evaluation_form
                             cmd.Parameters.AddWithValue("@porque_gostou", questionario.txtPq.Text);
 
                             cmd.ExecuteNonQuery();
+
+                            MessageBox.Show("Obrigado por tirar seu tempo a responder!!!");
+                            Application.Exit();
                         }
                     }
                 }
