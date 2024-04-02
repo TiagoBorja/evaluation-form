@@ -73,6 +73,16 @@ namespace evaluation_form.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap estrela_sem_fundo {
+            get {
+                object obj = ResourceManager.GetObject("estrela_sem_fundo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap seta_voltar {
             get {
                 object obj = ResourceManager.GetObject("seta_voltar", resourceCulture);

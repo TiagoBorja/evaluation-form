@@ -105,5 +105,8 @@
   <ItemGroup>
     <None Include="img\seta-voltar.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estrela-sem-fundo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
