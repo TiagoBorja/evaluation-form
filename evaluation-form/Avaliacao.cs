@@ -62,6 +62,7 @@ namespace evaluation_form
                             Application.Exit();
                         }
                     }
+                    MessageBox.Show("MySql está desligado!","Alerta!",MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }catch (Exception ex)
             {
