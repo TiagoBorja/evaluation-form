@@ -26,14 +26,14 @@ CREATE TABLE IF NOT EXISTS `perguntas_avaliacao` (
   `id_resposta` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(50) NOT NULL,
   `apelido` varchar(50) NOT NULL,
-  `ano` char(2) NOT NULL,
+  `ano` char(3) NOT NULL,
   `escola` varchar(90) NOT NULL,
   `curso_frequentado` varchar(90) NOT NULL,
   `atividade_gostou` text NOT NULL,
   `porque_gostou` text NOT NULL,
   `nota_final` int(11) NOT NULL,
   PRIMARY KEY (`id_resposta`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Exportação de dados não seleccionada.
 
