@@ -1,6 +1,6 @@
 -- --------------------------------------------------------
 -- Anfitrião:                    127.0.0.1
--- Versão do servidor:           10.4.27-MariaDB - mariadb.org binary distribution
+-- Versão do servidor:           10.4.28-MariaDB - mariadb.org binary distribution
 -- SO do servidor:               Win64
 -- HeidiSQL Versão:              12.6.0.6765
 -- --------------------------------------------------------
@@ -20,31 +20,20 @@ DROP DATABASE IF EXISTS `evaluation-form`;
 CREATE DATABASE IF NOT EXISTS `evaluation-form` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
 USE `evaluation-form`;
 
--- A despejar estrutura para tabela evaluation-form.dados_aluno
-DROP TABLE IF EXISTS `dados_aluno`;
-CREATE TABLE IF NOT EXISTS `dados_aluno` (
-  `id_aluno` int(11) NOT NULL AUTO_INCREMENT,
-  `nome` varchar(50) NOT NULL,
-  `apelido` varchar(140) NOT NULL,
-  `escola` varchar(255) NOT NULL,
-  PRIMARY KEY (`id_aluno`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- Exportação de dados não seleccionada.
-
 -- A despejar estrutura para tabela evaluation-form.perguntas_avaliacao
 DROP TABLE IF EXISTS `perguntas_avaliacao`;
 CREATE TABLE IF NOT EXISTS `perguntas_avaliacao` (
   `id_resposta` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(50) NOT NULL,
+  `apelido` varchar(50) NOT NULL,
+  `ano` char(2) NOT NULL,
+  `escola` varchar(90) NOT NULL,
   `curso_frequentado` varchar(90) NOT NULL,
-  `atividade_gostou` varchar(140) NOT NULL,
-  `porque_gostou` varchar(255) NOT NULL,
-  `not_final` int(11) DEFAULT NULL,
-  `id_aluno` int(11) NOT NULL,
-  PRIMARY KEY (`id_resposta`,`id_aluno`) USING BTREE,
-  KEY `FK_perguntas_avaliacao_dados_aluno` (`id_aluno`),
-  CONSTRAINT `FK_perguntas_avaliacao_dados_aluno` FOREIGN KEY (`id_aluno`) REFERENCES `dados_aluno` (`id_aluno`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `atividade_gostou` text NOT NULL,
+  `porque_gostou` text NOT NULL,
+  `nota_final` int(11) NOT NULL,
+  PRIMARY KEY (`id_resposta`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Exportação de dados não seleccionada.
 
