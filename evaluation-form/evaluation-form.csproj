@@ -104,6 +104,7 @@
     <Compile Include="Avaliacao.Designer.cs">
       <DependentUpon>Avaliacao.cs</DependentUpon>
     </Compile>
+    <Compile Include="BD.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
