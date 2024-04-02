@@ -69,5 +69,23 @@ namespace evaluation_form
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void img5_Click(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+
+            // Recebe o "número" do btn clicado
+            int numeroBtn = int.Parse(btn.Name.Substring(3)); // Inicia a busca a partir do 4º caractér
+
+            // Inverte a ordem do btn, selecionando todos os seus antecessores
+            for (int i = numeroBtn; i >= 1; i--)
+            {
+                Button btnAnterior = (Button)this.Controls.Find("img" + i, true)[0];
+                btnAnterior.BackgroundImage = Properties.Resources.estrala_avaliacao;
+            }
+        }
+
+
+
     }
 }

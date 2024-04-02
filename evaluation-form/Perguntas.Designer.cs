@@ -57,6 +57,9 @@
             // 
             this.cbCurso.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.cbCurso.FormattingEnabled = true;
+            this.cbCurso.Items.AddRange(new object[] {
+            "Humanidades",
+            "Ciências"});
             this.cbCurso.Location = new System.Drawing.Point(209, 87);
             this.cbCurso.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbCurso.Name = "cbCurso";

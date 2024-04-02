@@ -107,6 +107,13 @@
             // 
             this.cbAno.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.cbAno.FormattingEnabled = true;
+            this.cbAno.Items.AddRange(new object[] {
+            "7º",
+            "8º",
+            "9º",
+            "10º",
+            "11º",
+            "12º"});
             this.cbAno.Location = new System.Drawing.Point(232, 386);
             this.cbAno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbAno.Name = "cbAno";

@@ -32,17 +32,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnEnviar = new System.Windows.Forms.Button();
-            this.cincoEstrelas = new System.Windows.Forms.PictureBox();
-            this.quatroEstrelas = new System.Windows.Forms.PictureBox();
-            this.tresEstrelas = new System.Windows.Forms.PictureBox();
-            this.duasEstrelas = new System.Windows.Forms.PictureBox();
-            this.umaEstrela = new System.Windows.Forms.PictureBox();
             this.pbVoltar = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.cincoEstrelas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quatroEstrelas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tresEstrelas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.duasEstrelas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.umaEstrela)).BeginInit();
+            this.img1 = new System.Windows.Forms.Button();
+            this.img2 = new System.Windows.Forms.Button();
+            this.img3 = new System.Windows.Forms.Button();
+            this.img4 = new System.Windows.Forms.Button();
+            this.img5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbVoltar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,9 +45,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 10F);
-            this.label1.Location = new System.Drawing.Point(75, 31);
+            this.label1.Location = new System.Drawing.Point(100, 38);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(326, 17);
+            this.label1.Size = new System.Drawing.Size(395, 20);
             this.label1.TabIndex = 5;
             this.label1.Text = "Obrigado por ter respondido até aqui, nome!";
             // 
@@ -60,9 +56,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 10F);
-            this.label2.Location = new System.Drawing.Point(61, 160);
+            this.label2.Location = new System.Drawing.Point(93, 200);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(353, 17);
+            this.label2.Size = new System.Drawing.Size(432, 20);
             this.label2.TabIndex = 6;
             this.label2.Text = "Por favor, de uma nota para o dia da informática.";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -72,102 +69,105 @@
             this.btnEnviar.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnEnviar.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEnviar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnEnviar.Location = new System.Drawing.Point(182, 310);
+            this.btnEnviar.Location = new System.Drawing.Point(243, 382);
+            this.btnEnviar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEnviar.Name = "btnEnviar";
-            this.btnEnviar.Size = new System.Drawing.Size(126, 40);
+            this.btnEnviar.Size = new System.Drawing.Size(168, 49);
             this.btnEnviar.TabIndex = 16;
             this.btnEnviar.Text = "Enviar";
             this.btnEnviar.UseVisualStyleBackColor = false;
             this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
             // 
-            // cincoEstrelas
-            // 
-            this.cincoEstrelas.Image = global::evaluation_form.Properties.Resources.estrala_avaliacao;
-            this.cincoEstrelas.Location = new System.Drawing.Point(341, 199);
-            this.cincoEstrelas.Name = "cincoEstrelas";
-            this.cincoEstrelas.Size = new System.Drawing.Size(60, 60);
-            this.cincoEstrelas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.cincoEstrelas.TabIndex = 4;
-            this.cincoEstrelas.TabStop = false;
-            // 
-            // quatroEstrelas
-            // 
-            this.quatroEstrelas.Image = global::evaluation_form.Properties.Resources.estrala_avaliacao;
-            this.quatroEstrelas.Location = new System.Drawing.Point(275, 199);
-            this.quatroEstrelas.Name = "quatroEstrelas";
-            this.quatroEstrelas.Size = new System.Drawing.Size(60, 60);
-            this.quatroEstrelas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.quatroEstrelas.TabIndex = 3;
-            this.quatroEstrelas.TabStop = false;
-            // 
-            // tresEstrelas
-            // 
-            this.tresEstrelas.Image = global::evaluation_form.Properties.Resources.estrala_avaliacao;
-            this.tresEstrelas.Location = new System.Drawing.Point(209, 199);
-            this.tresEstrelas.Name = "tresEstrelas";
-            this.tresEstrelas.Size = new System.Drawing.Size(60, 60);
-            this.tresEstrelas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.tresEstrelas.TabIndex = 2;
-            this.tresEstrelas.TabStop = false;
-            // 
-            // duasEstrelas
-            // 
-            this.duasEstrelas.Image = global::evaluation_form.Properties.Resources.estrala_avaliacao;
-            this.duasEstrelas.Location = new System.Drawing.Point(143, 199);
-            this.duasEstrelas.Name = "duasEstrelas";
-            this.duasEstrelas.Size = new System.Drawing.Size(60, 60);
-            this.duasEstrelas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.duasEstrelas.TabIndex = 1;
-            this.duasEstrelas.TabStop = false;
-            // 
-            // umaEstrela
-            // 
-            this.umaEstrela.Image = global::evaluation_form.Properties.Resources.estrala_avaliacao;
-            this.umaEstrela.Location = new System.Drawing.Point(77, 199);
-            this.umaEstrela.Name = "umaEstrela";
-            this.umaEstrela.Size = new System.Drawing.Size(60, 60);
-            this.umaEstrela.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.umaEstrela.TabIndex = 0;
-            this.umaEstrela.TabStop = false;
-            // 
             // pbVoltar
             // 
             this.pbVoltar.Image = ((System.Drawing.Image)(resources.GetObject("pbVoltar.Image")));
-            this.pbVoltar.Location = new System.Drawing.Point(25, 374);
+            this.pbVoltar.Location = new System.Drawing.Point(33, 460);
+            this.pbVoltar.Margin = new System.Windows.Forms.Padding(4);
             this.pbVoltar.Name = "pbVoltar";
-            this.pbVoltar.Size = new System.Drawing.Size(25, 25);
+            this.pbVoltar.Size = new System.Drawing.Size(33, 31);
             this.pbVoltar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbVoltar.TabIndex = 18;
             this.pbVoltar.TabStop = false;
             this.pbVoltar.Click += new System.EventHandler(this.pbVoltar_Click);
             // 
+            // img1
+            // 
+            this.img1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("img1.BackgroundImage")));
+            this.img1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.img1.Location = new System.Drawing.Point(94, 254);
+            this.img1.Name = "img1";
+            this.img1.Size = new System.Drawing.Size(80, 74);
+            this.img1.TabIndex = 11;
+            this.img1.UseVisualStyleBackColor = true;
+            this.img1.Click += new System.EventHandler(this.img5_Click);
+            // 
+            // img2
+            // 
+            this.img2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("img2.BackgroundImage")));
+            this.img2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.img2.Location = new System.Drawing.Point(181, 254);
+            this.img2.Name = "img2";
+            this.img2.Size = new System.Drawing.Size(80, 74);
+            this.img2.TabIndex = 12;
+            this.img2.UseVisualStyleBackColor = true;
+            this.img2.Click += new System.EventHandler(this.img5_Click);
+            // 
+            // img3
+            // 
+            this.img3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("img3.BackgroundImage")));
+            this.img3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.img3.Location = new System.Drawing.Point(269, 254);
+            this.img3.Name = "img3";
+            this.img3.Size = new System.Drawing.Size(80, 74);
+            this.img3.TabIndex = 13;
+            this.img3.UseVisualStyleBackColor = true;
+            this.img3.Click += new System.EventHandler(this.img5_Click);
+            // 
+            // img4
+            // 
+            this.img4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("img4.BackgroundImage")));
+            this.img4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.img4.Location = new System.Drawing.Point(358, 254);
+            this.img4.Name = "img4";
+            this.img4.Size = new System.Drawing.Size(80, 74);
+            this.img4.TabIndex = 14;
+            this.img4.UseVisualStyleBackColor = true;
+            this.img4.Click += new System.EventHandler(this.img5_Click);
+            // 
+            // img5
+            // 
+            this.img5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("img5.BackgroundImage")));
+            this.img5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.img5.Location = new System.Drawing.Point(445, 254);
+            this.img5.Name = "img5";
+            this.img5.Size = new System.Drawing.Size(80, 74);
+            this.img5.TabIndex = 15;
+            this.img5.UseVisualStyleBackColor = true;
+            this.img5.Click += new System.EventHandler(this.img5_Click);
+            // 
             // Avaliacao
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PapayaWhip;
-            this.ClientSize = new System.Drawing.Size(484, 411);
+            this.ClientSize = new System.Drawing.Size(645, 506);
+            this.Controls.Add(this.img5);
+            this.Controls.Add(this.img4);
+            this.Controls.Add(this.img3);
+            this.Controls.Add(this.img2);
+            this.Controls.Add(this.img1);
             this.Controls.Add(this.pbVoltar);
             this.Controls.Add(this.btnEnviar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.cincoEstrelas);
-            this.Controls.Add(this.quatroEstrelas);
-            this.Controls.Add(this.tresEstrelas);
-            this.Controls.Add(this.duasEstrelas);
-            this.Controls.Add(this.umaEstrela);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Avaliacao";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Avaliação";
-            ((System.ComponentModel.ISupportInitialize)(this.cincoEstrelas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.quatroEstrelas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tresEstrelas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.duasEstrelas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.umaEstrela)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbVoltar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -175,15 +175,14 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox umaEstrela;
-        private System.Windows.Forms.PictureBox duasEstrelas;
-        private System.Windows.Forms.PictureBox tresEstrelas;
-        private System.Windows.Forms.PictureBox quatroEstrelas;
-        private System.Windows.Forms.PictureBox cincoEstrelas;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnEnviar;
         private System.Windows.Forms.PictureBox pbVoltar;
+        private System.Windows.Forms.Button img1;
+        private System.Windows.Forms.Button img2;
+        private System.Windows.Forms.Button img3;
+        private System.Windows.Forms.Button img4;
+        private System.Windows.Forms.Button img5;
     }
 }
